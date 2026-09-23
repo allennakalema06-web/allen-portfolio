@@ -6,16 +6,19 @@ type ThemeToggleProps = {
 }
 
 function ThemeToggle({ theme, onToggle }: ThemeToggleProps) {
-  const nextTheme = theme === 'light' ? 'dark' : 'light'
+  const isDark = theme === 'dark'
 
   return (
     <button
+      className="theme-toggle"
       type="button"
       onClick={onToggle}
-      aria-label={`Switch to ${nextTheme} mode`}
-      title={`Switch to ${nextTheme} mode`}
+      aria-label={`Switch to ${isDark ? 'light' : 'dark'} mode`}
+      title={`Switch to ${isDark ? 'light' : 'dark'} mode`}
     >
-      {theme === 'light' ? 'Dark mode' : 'Light mode'}
+      <span aria-hidden="true">
+        {isDark ? '☀' : '☾'}
+      </span>
     </button>
   )
 }

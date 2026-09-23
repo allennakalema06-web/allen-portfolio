@@ -1,0 +1,44 @@
+.not-found {
+  min-height: 75vh;
+
+  display: flex;
+  align-items: center;
+
+  padding-block: 5rem;
+}
+
+.not-found__inner {
+  max-width: 900px;
+}
+
+.not-found h1 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-size: clamp(3rem, 8vw, 7rem);
+  font-weight: 600;
+  line-height: 0.95;
+  letter-spacing: -0.06em;
+}
+
+.not-found h1 span {
+  color: var(--color-text-muted);
+}
+
+.not-found__inner > p:not(.eyebrow) {
+  max-width: 600px;
+  margin-top: 1.5rem;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.75;
+}
+
+.not-found__actions {
+  margin-top: 2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
