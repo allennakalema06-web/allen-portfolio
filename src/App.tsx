@@ -16,6 +16,7 @@ import NyondoCaseStudy from './pages/ProjectDetails/NyondoCaseStudy'
 import ParkEaseCaseStudy from './pages/ProjectDetails/ParkEaseCaseStudy'
 import UgslCaseStudy from './pages/ProjectDetails/UgslCaseStudy'
 import NotFound from './pages/NotFound/NotFound'
+import ProblemBeforeTechnology from './pages/Articles/ProblemBeforeTechnology'
 const router = createBrowserRouter([
   {
     path: '/',
@@ -69,6 +70,10 @@ const router = createBrowserRouter([
       path: '*',
       element: <NotFound />,
     },
+    {
+      path: 'articles/problem-before-technology',
+      element: <ProblemBeforeTechnology />,
+   },
     ],
   },
 ])

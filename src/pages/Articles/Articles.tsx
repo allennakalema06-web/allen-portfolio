@@ -1,31 +1,5 @@
 import { Link } from 'react-router-dom'
-
-const articles = [
-  {
-    slug: 'problem-before-technology',
-    category: 'Engineering',
-    title: 'Why the problem should come before the technology',
-    excerpt:
-      'A reflection on why understanding the real problem matters more than rushing to choose a framework or tool.',
-    status: 'Coming soon',
-  },
-  {
-    slug: 'learning-ai-without-losing-the-human',
-    category: 'AI',
-    title: 'Learning AI without forgetting the human on the other side',
-    excerpt:
-      'What I am learning about building intelligent systems while keeping people, context and usefulness at the centre.',
-    status: 'Coming soon',
-  },
-  {
-    slug: 'what-nyondo-taught-me',
-    category: 'Building in Public',
-    title: 'What building my first real system taught me that tutorials could not',
-    excerpt:
-      'Lessons from turning business rules, users and real workflows into working software.',
-    status: 'Coming soon',
-  },
-]
+import { articles } from '../../data/articles'
 
 function Articles() {
   return (
@@ -40,9 +14,9 @@ function Articles() {
           </h1>
 
           <p>
-            This is where I go deeper than a LinkedIn post, sharing what I
-            learn from engineering, AI, building products and becoming a better
-            problem solver.
+            This is where I go deeper than a short post — sharing what I learn
+            from engineering, AI, product building and the questions that stay
+            with me while I work.
           </p>
         </div>
       </section>
@@ -57,9 +31,10 @@ function Articles() {
                 </div>
 
                 <div className="article-card__content">
-                  <p className="article-card__category">
-                    {article.category}
-                  </p>
+                  <div className="article-card__meta">
+                    <span>{article.category}</span>
+                    <span>{article.date}</span>
+                  </div>
 
                   <h2>{article.title}</h2>
 
@@ -68,15 +43,17 @@ function Articles() {
                   </p>
 
                   <div className="article-card__footer">
-                    <span>{article.status}</span>
+                    <span>{article.readingTime}</span>
 
-                    {article.status !== 'Coming soon' && (
+                    {article.status === 'published' ? (
                       <Link
                         className="text-link"
                         to={`/articles/${article.slug}`}
                       >
                         Read article →
                       </Link>
+                    ) : (
+                      <span>Coming soon</span>
                     )}
                   </div>
                 </div>
