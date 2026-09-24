@@ -1,0 +1,289 @@
+.open-source-hero,
+.open-source-overview,
+.open-source-workflow,
+.open-source-example,
+.open-source-thinking,
+.open-source-tools,
+.open-source-next {
+  padding-block: clamp(2.8rem, 4.5vw, 4.2rem);
+}
+
+.open-source-hero {
+  background:
+    radial-gradient(
+      circle at 88% 14%,
+      color-mix(in srgb, var(--color-accent) 18%, transparent),
+      transparent 30%
+    ),
+    var(--color-bg);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.open-source-hero__grid,
+.open-source-overview__grid,
+.open-source-example__grid,
+.open-source-thinking__grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.open-source-hero h1,
+.open-source-overview h2,
+.open-source-section-heading h2,
+.open-source-example h2,
+.open-source-thinking h2,
+.open-source-next h2 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.open-source-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.open-source-hero h1 span,
+.open-source-section-heading h2 span,
+.open-source-next h2 span {
+  color: var(--color-text-muted);
+}
+
+.open-source-hero p:not(.eyebrow),
+.open-source-copy p {
+  color: var(--color-text-muted);
+  line-height: 1.75;
+}
+
+.open-source-hero__mark {
+  min-height: 260px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-accent-soft),
+      var(--color-surface)
+    );
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.open-source-hero__mark span {
+  color: var(--color-accent);
+
+  font-size: clamp(4rem, 10vw, 8rem);
+  font-weight: 750;
+  letter-spacing: -0.08em;
+
+  opacity: 0.35;
+}
+
+.open-source-overview,
+.open-source-example {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.open-source-overview h2,
+.open-source-example h2,
+.open-source-thinking h2 {
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+}
+
+.open-source-section-heading {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.open-source-section-heading h2 {
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+}
+
+.open-source-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.open-source-grid article {
+  padding: 1.2rem;
+
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.open-source-grid article:nth-child(3n) {
+  border-right: 0;
+}
+
+.open-source-grid article > span {
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.open-source-grid h3 {
+  margin: 1rem 0 0.6rem;
+
+  color: var(--color-text);
+}
+
+.open-source-grid p {
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.65;
+}
+
+.open-source-example,
+.open-source-thinking {
+  background:
+    color-mix(
+      in srgb,
+      var(--color-surface) 78%,
+      transparent
+    );
+}
+
+.open-source-example__steps {
+  border-top: 1px solid var(--color-border);
+}
+
+.open-source-example__steps article {
+  padding-block: 1rem;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.open-source-example__steps span {
+  color: var(--color-accent);
+
+  font-family: monospace;
+  font-size: 0.82rem;
+}
+
+.open-source-example__steps p {
+  margin: 0.4rem 0 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.6;
+}
+
+.open-source-tools {
+  border-block: 1px solid var(--color-border);
+}
+
+.open-source-tools__row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+
+  margin-top: 1.2rem;
+}
+
+.open-source-tools__row span {
+  padding: 0.45rem 0.7rem;
+
+  background: var(--color-accent-soft);
+  color: var(--color-accent);
+
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  font-weight: 650;
+}
+
+.open-source-next {
+  background:
+    radial-gradient(
+      circle at 85% 18%,
+      color-mix(in srgb, var(--color-accent) 20%, transparent),
+      transparent 30%
+    ),
+    var(--color-accent-soft);
+}
+
+.open-source-next__inner {
+  max-width: 1000px;
+}
+
+.open-source-next h2 {
+  max-width: 900px;
+
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+}
+
+.open-source-next__actions {
+  margin-top: 1.6rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+@media (max-width: 900px) {
+  .open-source-hero__grid,
+  .open-source-overview__grid,
+  .open-source-example__grid,
+  .open-source-thinking__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .open-source-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .open-source-grid article:nth-child(3n) {
+    border-right: 1px solid var(--color-border);
+  }
+
+  .open-source-grid article:nth-child(2n) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .open-source-hero,
+  .open-source-overview,
+  .open-source-workflow,
+  .open-source-example,
+  .open-source-thinking,
+  .open-source-tools,
+  .open-source-next {
+    padding-block: 2.4rem;
+  }
+
+  .open-source-hero h1,
+  .open-source-overview h2,
+  .open-source-section-heading h2,
+  .open-source-example h2,
+  .open-source-thinking h2,
+  .open-source-next h2 {
+    font-size: clamp(2.2rem, 11vw, 3.8rem);
+  }
+
+  .open-source-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .open-source-grid article,
+  .open-source-grid article:nth-child(2n),
+  .open-source-grid article:nth-child(3n) {
+    padding-inline: 0;
+
+    border-right: 0;
+  }
+}
