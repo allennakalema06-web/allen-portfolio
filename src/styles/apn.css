@@ -1,0 +1,307 @@
+.apn-hero,
+.apn-origin,
+.apn-preview,
+.apn-vision,
+.apn-tech,
+.apn-founder,
+.apn-next {
+  padding-block: clamp(2.8rem, 4.5vw, 4.2rem);
+}
+
+.apn-hero {
+  background:
+    radial-gradient(
+      circle at 88% 12%,
+      color-mix(in srgb, var(--color-accent) 18%, transparent),
+      transparent 30%
+    ),
+    var(--color-bg);
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.apn-hero__grid,
+.apn-origin__grid,
+.apn-preview__grid,
+.apn-tech__grid,
+.apn-founder__grid {
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  align-items: center;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.apn-hero h1,
+.apn-origin h2,
+.apn-preview h2,
+.apn-section-heading h2,
+.apn-tech h2,
+.apn-founder h2,
+.apn-next h2 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.055em;
+}
+
+.apn-hero h1 {
+  font-size: clamp(3rem, 7vw, 6rem);
+}
+
+.apn-hero h1 span,
+.apn-origin h2 span,
+.apn-section-heading h2 span,
+.apn-founder h2 span,
+.apn-next h2 span {
+  color: var(--color-text-muted);
+}
+
+.apn-hero__content > p:not(.eyebrow),
+.apn-copy p,
+.apn-next__inner > p:not(.eyebrow) {
+  color: var(--color-text-muted);
+
+  line-height: 1.75;
+}
+
+.apn-hero__actions,
+.apn-next__actions {
+  margin-top: 1.6rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+}
+
+.apn-hero__visual {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 360px;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-surface);
+}
+
+.apn-hero__visual > img {
+  width: 100%;
+  height: 100%;
+  min-height: 360px;
+
+  display: block;
+
+  object-fit: cover;
+}
+
+.apn-hero__logo {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+
+  width: 95px;
+  height: 95px;
+
+  display: grid;
+  place-items: center;
+
+  padding: 0.8rem;
+
+  background:
+    color-mix(
+      in srgb,
+      var(--color-surface-elevated) 85%,
+      transparent
+    );
+
+  border: 1px solid var(--color-border);
+  border-radius: 1.2rem;
+
+  backdrop-filter: blur(18px);
+}
+
+.apn-hero__logo img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.apn-origin h2,
+.apn-preview h2,
+.apn-tech h2,
+.apn-founder h2 {
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+}
+
+.apn-preview,
+.apn-tech {
+  background:
+    color-mix(
+      in srgb,
+      var(--color-surface) 78%,
+      transparent
+    );
+
+  border-block: 1px solid var(--color-border);
+}
+
+.apn-preview__visual {
+  overflow: hidden;
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+
+  background: var(--color-surface);
+}
+
+.apn-preview__visual img {
+  width: 100%;
+  display: block;
+}
+
+.apn-section-heading {
+  max-width: 900px;
+  margin-bottom: 2rem;
+}
+
+.apn-section-heading h2 {
+  font-size: clamp(2.3rem, 5vw, 4.4rem);
+}
+
+.apn-pillars {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.apn-pillars article {
+  padding: 1.2rem;
+
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.apn-pillars article:first-child {
+  padding-left: 0;
+}
+
+.apn-pillars article:last-child {
+  border-right: 0;
+}
+
+.apn-pillars article > span {
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.apn-pillars h3 {
+  margin: 1rem 0 0.6rem;
+
+  color: var(--color-text);
+}
+
+.apn-pillars p {
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.65;
+}
+
+.apn-next {
+  background:
+    radial-gradient(
+      circle at 85% 18%,
+      color-mix(in srgb, var(--color-accent) 20%, transparent),
+      transparent 30%
+    ),
+    var(--color-accent-soft);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.apn-next__inner {
+  max-width: 950px;
+}
+
+.apn-next h2 {
+  max-width: 850px;
+
+  font-size: clamp(2.3rem, 5vw, 4.5rem);
+}
+
+.apn-next__inner > p:not(.eyebrow) {
+  max-width: 620px;
+}
+
+@media (max-width: 900px) {
+  .apn-hero__grid,
+  .apn-origin__grid,
+  .apn-preview__grid,
+  .apn-tech__grid,
+  .apn-founder__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .apn-pillars {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .apn-pillars article:first-child {
+    padding-left: 1.2rem;
+  }
+
+  .apn-pillars article:nth-child(2n) {
+    border-right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .apn-hero,
+  .apn-origin,
+  .apn-preview,
+  .apn-vision,
+  .apn-tech,
+  .apn-founder,
+  .apn-next {
+    padding-block: 2.4rem;
+  }
+
+  .apn-hero h1,
+  .apn-origin h2,
+  .apn-preview h2,
+  .apn-section-heading h2,
+  .apn-tech h2,
+  .apn-founder h2,
+  .apn-next h2 {
+    font-size: clamp(2.2rem, 11vw, 3.8rem);
+  }
+
+  .apn-pillars {
+    grid-template-columns: 1fr;
+  }
+
+  .apn-pillars article,
+  .apn-pillars article:first-child {
+    padding-inline: 0;
+
+    border-right: 0;
+  }
+
+  .apn-hero__visual,
+  .apn-hero__visual > img {
+    min-height: 300px;
+  }
+
+  .apn-hero__logo {
+    width: 80px;
+    height: 80px;
+  }
+}
