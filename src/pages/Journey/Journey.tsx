@@ -17,7 +17,7 @@ const journey = [
     description:
       'I joined Groundbreaker Talents and began developing software engineering skills in a structured, practical environment.',
     lesson:
-      'Technology became something I could create with — not simply something I consumed or admired.',
+      'Technology became something I could create with, not simply something I consumed or admired.',
   },
   {
     date: 'JUNE 2026',
@@ -154,7 +154,7 @@ function Journey() {
             </p>
 
             <p>
-              I&apos;m still early in that journey — and that is exactly why
+              I&apos;m still early in that journey, and that is exactly why
               I&apos;m building as much as I can now.
             </p>
           </div>

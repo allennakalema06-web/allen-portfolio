@@ -27,7 +27,7 @@ function About() {
             </p>
 
             <p>
-              I enjoy working on problems that require more than writing code —
+              I enjoy working on problems that require more than writing code,
               problems where you first have to understand people, workflows,
               constraints and what a useful solution should actually do.
             </p>
@@ -188,7 +188,7 @@ function About() {
 
             <p>
               I'm especially interested in systems where software, intelligence
-              and real user needs meet — whether that is business software,
+              and real user needs meet, whether that is business software,
               learning tools, AI-assisted experiences or technology that
               eventually interacts with the physical world.
             </p>

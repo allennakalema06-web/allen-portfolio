@@ -40,7 +40,7 @@ function Articles() {
           </h1>
 
           <p>
-            This is where I go deeper than a LinkedIn post — sharing what I
+            This is where I go deeper than a LinkedIn post, sharing what I
             learn from engineering, AI, building products and becoming a better
             problem solver.
           </p>

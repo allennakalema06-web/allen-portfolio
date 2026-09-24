@@ -231,7 +231,7 @@ function Work() {
 
           <p>
             If you&apos;re curious about how I approach engineering, start
-            with the Nyondo case study — it carries the most complete example
+            with the Nyondo case study, it carries the most complete example
             of my thinking so far.
           </p>
 
