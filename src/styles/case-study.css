@@ -567,6 +567,146 @@
   border-radius: var(--radius-md);
 }
 
+.parkease-case-study__mark {
+  min-height: 280px;
+
+  display: grid;
+  place-items: center;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--color-accent-soft),
+      var(--color-surface)
+    );
+
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+}
+
+.parkease-case-study__mark span {
+  color: var(--color-accent);
+
+  font-size: clamp(5rem, 11vw, 9rem);
+  font-weight: 750;
+  letter-spacing: -0.08em;
+
+  opacity: 0.35;
+}
+
+.parkease-contributions,
+.parkease-auth,
+.parkease-roles,
+.parkease-team,
+.parkease-learning {
+  padding-block: clamp(2.8rem, 4.5vw, 4.2rem);
+}
+
+.parkease-auth,
+.parkease-team {
+  background:
+    color-mix(
+      in srgb,
+      var(--color-surface) 78%,
+      transparent
+    );
+
+  border-block: 1px solid var(--color-border);
+}
+
+.parkease-auth__grid,
+.parkease-roles__grid,
+.parkease-team__grid,
+.parkease-learning__grid {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: clamp(2rem, 4vw, 4rem);
+}
+
+.parkease-auth h2,
+.parkease-roles h2,
+.parkease-team h2,
+.parkease-learning h2 {
+  margin: 0;
+
+  color: var(--color-text);
+
+  font-size: clamp(2.2rem, 4.5vw, 4rem);
+  font-weight: 600;
+  line-height: 0.98;
+  letter-spacing: -0.05em;
+}
+
+.parkease-contributions__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+
+  border-top: 1px solid var(--color-border);
+}
+
+.parkease-contributions__grid article {
+  padding: 1.2rem;
+
+  border-right: 1px solid var(--color-border);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.parkease-contributions__grid article:first-child {
+  padding-left: 0;
+}
+
+.parkease-contributions__grid article:last-child {
+  border-right: 0;
+}
+
+.parkease-contributions__grid article > span {
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+}
+
+.parkease-contributions__grid h3 {
+  margin: 1rem 0 0.6rem;
+
+  color: var(--color-text);
+}
+
+.parkease-contributions__grid p {
+  margin: 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.65;
+}
+
+.parkease-role-list {
+  border-top: 1px solid var(--color-border);
+}
+
+.parkease-role-list article {
+  padding-block: 1rem;
+
+  border-bottom: 1px solid var(--color-border);
+}
+
+.parkease-role-list span {
+  color: var(--color-accent);
+
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.parkease-role-list p {
+  margin: 0.4rem 0 0;
+
+  color: var(--color-text-muted);
+
+  line-height: 1.65;
+}
+
 @media (max-width: 900px) {
   .case-study-hero__grid,
   .case-study-overview__grid,
@@ -615,6 +755,21 @@
   .ugsl-architecture__diagram > span {
     transform: rotate(90deg);
     text-align: center;
+  }
+
+  .parkease-auth__grid,
+  .parkease-roles__grid,
+  .parkease-team__grid,
+  .parkease-learning__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parkease-contributions__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .parkease-contributions__grid article:nth-child(2n) {
+    border-right: 0;
   }
 }
 
@@ -711,5 +866,31 @@
 
   .ugsl-gallery__grid img {
     height: 240px;
+  }
+
+  .parkease-contributions,
+  .parkease-auth,
+  .parkease-roles,
+  .parkease-team,
+  .parkease-learning {
+    padding-block: 2.4rem;
+  }
+
+  .parkease-auth h2,
+  .parkease-roles h2,
+  .parkease-team h2,
+  .parkease-learning h2 {
+    font-size: clamp(2.1rem, 11vw, 3.6rem);
+  }
+
+  .parkease-contributions__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .parkease-contributions__grid article,
+  .parkease-contributions__grid article:first-child {
+    padding-inline: 0;
+
+    border-right: 0;
   }
 }

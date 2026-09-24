@@ -61,7 +61,7 @@ function OpenSource() {
           </div>
 
           <div className="open-source-hero__mark">
-            <span>OSS.</span>
+            <span>OPS.</span>
           </div>
         </div>
       </section>
