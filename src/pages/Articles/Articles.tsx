@@ -14,7 +14,7 @@ function Articles() {
           </h1>
 
           <p>
-            This is where I go deeper than a short post — sharing what I learn
+            This is where I go deeper than a short post, sharing what I learn
             from engineering, AI, product building and the questions that stay
             with me while I work.
           </p>

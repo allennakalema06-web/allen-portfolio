@@ -4,19 +4,24 @@ import {
 } from 'react-router-dom'
 
 import RootLayout from './layouts/RootLayout'
-import About from './pages/About/About'
-import Contact from './pages/Contact/Contact'
+
 import Home from './pages/Home/Home'
+import About from './pages/About/About'
 import Work from './pages/Work/Work'
+import Contact from './pages/Contact/Contact'
 import Apn from './pages/Apn/Apn'
 import Journey from './pages/Journey/Journey'
 import OpenSource from './pages/OpenSource/OpenSource'
 import Articles from './pages/Articles/Articles'
+
 import NyondoCaseStudy from './pages/ProjectDetails/NyondoCaseStudy'
 import ParkEaseCaseStudy from './pages/ProjectDetails/ParkEaseCaseStudy'
 import UgslCaseStudy from './pages/ProjectDetails/UgslCaseStudy'
+
+import ArticleDetail from './pages/Articles/ArticleDetail'
+
 import NotFound from './pages/NotFound/NotFound'
-import ProblemBeforeTechnology from './pages/Articles/ProblemBeforeTechnology'
+
 const router = createBrowserRouter([
   {
     path: '/',
@@ -53,27 +58,27 @@ const router = createBrowserRouter([
       {
         path: 'articles',
         element: <Articles />,
+      },
+      {
+        path: 'work/nyondo-stock-system',
+        element: <NyondoCaseStudy />,
+      },
+      {
+        path: 'work/ugsl-ai-practice-coach',
+        element: <UgslCaseStudy />,
+      },
+      {
+        path: 'work/parkease',
+        element: <ParkEaseCaseStudy />,
+      },
+      {
+        path: 'articles/:slug',
+        element: <ArticleDetail />,
     },
-    {
-      path: 'work/nyondo-stock-system',
-      element: <NyondoCaseStudy />,
-    },
-    {
-      path: 'work/ugsl-ai-practice-coach',
-      element: <UgslCaseStudy />,
-    },
-    {
-      path: 'work/parkease',
-      element: <ParkEaseCaseStudy />,
-    },
-    {
-      path: '*',
-      element: <NotFound />,
-    },
-    {
-      path: 'articles/problem-before-technology',
-      element: <ProblemBeforeTechnology />,
-   },
+      {
+        path: '*',
+        element: <NotFound />,
+      },
     ],
   },
 ])
