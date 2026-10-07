@@ -115,7 +115,7 @@ function Home() {
               </div>
 
               <div className="inline-actions">
-                <Link className="text-link" to="/work">
+                <Link className="text-link" to="/work/nyondo-stock-system">
                   See how I built it →
                 </Link>
 
@@ -183,7 +183,7 @@ function Home() {
                   learning experience rather than replace it.
                 </p>
 
-                <Link className="text-link" to="/work">
+                <Link className="text-link" to="/work/ugsl-ai-practice-coach">
                   Explore the project →
                 </Link>
               </div>
@@ -331,7 +331,7 @@ function Home() {
 
               <p>I worked mainly on the Django backend alongside Rose.</p>
 
-              <Link className="text-link" to="/work">
+              <Link className="text-link" to="/work/parkease">
                 Explore ParkEase →
               </Link>
             </article>
