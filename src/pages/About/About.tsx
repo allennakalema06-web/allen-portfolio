@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import PageMeta from '../../components/common/PageMeta'
 const currentFocus = [
   'Software & AI Engineering at Turing College',
   'UgSL AI Practice Coach',
@@ -11,6 +11,10 @@ const currentFocus = [
 function About() {
   return (
     <main className="about-page">
+      <PageMeta
+        title="About"
+        description="Learn about Allen Nakalema, a software engineer, AI builder and founder from Uganda."
+      />
       <section className="about-hero">
         <div className="container about-hero__grid">
           <div className="about-hero__content">
@@ -18,7 +22,10 @@ function About() {
 
             <h1>
               I care about understanding
-              <span> why something matters before deciding how to build it.</span>
+              <span>
+                {' '}
+                why something matters before deciding how to build it.
+              </span>
             </h1>
 
             <p>
@@ -34,10 +41,7 @@ function About() {
           </div>
 
           <div className="about-hero__portrait">
-            <img
-              src="/images/allen/portrait.png"
-              alt="Allen Nakalema"
-            />
+            <img src="/images/allen/portrait.webp" alt="Allen Nakalema" />
           </div>
         </div>
       </section>
@@ -47,9 +51,7 @@ function About() {
           <div>
             <p className="eyebrow">How I think</p>
 
-            <h2>
-              The question behind the code matters to me.
-            </h2>
+            <h2>The question behind the code matters to me.</h2>
           </div>
 
           <div className="about-copy">
@@ -61,8 +63,8 @@ function About() {
 
             <p>
               That way of thinking shapes how I learn too. I don't enjoy
-              memorising steps without understanding them. I want to know what
-              a system is doing underneath, why a decision was made, and what
+              memorising steps without understanding them. I want to know what a
+              system is doing underneath, why a decision was made, and what
               would happen if we changed it.
             </p>
 
@@ -113,8 +115,8 @@ function About() {
                 <h3>Groundbreaker Talents</h3>
 
                 <p>
-                  Joining Groundbreaker Talents gave me the environment to
-                  begin building that technical foundation seriously.
+                  Joining Groundbreaker Talents gave me the environment to begin
+                  building that technical foundation seriously.
                 </p>
 
                 <p>
@@ -182,8 +184,8 @@ function About() {
 
           <div className="about-copy">
             <p>
-              My direction is moving toward AI engineering and product
-              building, while keeping a strong software engineering foundation.
+              My direction is moving toward AI engineering and product building,
+              while keeping a strong software engineering foundation.
             </p>
 
             <p>
@@ -229,9 +231,7 @@ function About() {
             <article>
               <span>01</span>
               <h3>Clarity</h3>
-              <p>
-                Understand what we're solving before adding complexity.
-              </p>
+              <p>Understand what we're solving before adding complexity.</p>
             </article>
 
             <article>
@@ -255,9 +255,7 @@ function About() {
             <article>
               <span>04</span>
               <h3>Growth</h3>
-              <p>
-                Build, learn from reality, improve and keep moving.
-              </p>
+              <p>Build, learn from reality, improve and keep moving.</p>
             </article>
           </div>
         </div>

@@ -1,5 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
+
 import { articles } from '../../data/articles'
+import PageMeta from '../../components/common/PageMeta'
 
 function ArticleDetail() {
   const { slug } = useParams()
@@ -11,6 +13,11 @@ function ArticleDetail() {
   if (!article || !article.content) {
     return (
       <main className="article-page">
+        <PageMeta
+          title="Article Not Found"
+          description="The requested article is not available."
+        />
+
         <section className="not-found">
           <div className="container not-found__inner">
             <p className="eyebrow">Article not found</p>
@@ -33,6 +40,8 @@ function ArticleDetail() {
 
   return (
     <main className="article-page">
+      <PageMeta title={article.title} description={article.excerpt} />
+
       <article>
         <header className="article-hero">
           <div className="container article-hero__inner">
@@ -42,9 +51,7 @@ function ArticleDetail() {
 
             <h1>{article.title}</h1>
 
-            <p className="article-hero__lead">
-              {article.excerpt}
-            </p>
+            <p className="article-hero__lead">{article.excerpt}</p>
 
             <div className="article-hero__meta">
               <span>By Allen Nakalema</span>

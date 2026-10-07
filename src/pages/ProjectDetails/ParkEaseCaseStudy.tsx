@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const contributions = [
   {
@@ -30,6 +31,10 @@ const contributions = [
 function ParkEaseCaseStudy() {
   return (
     <main className="case-study parkease-case-study">
+      <PageMeta
+        title="ParkEase"
+        description="Case study of a collaborative Django parking application focused on backend logic, authentication and role-based workflows."
+      />
       <section className="case-study-hero">
         <div className="container case-study-hero__grid">
           <div className="case-study-hero__content">
@@ -70,8 +75,7 @@ function ParkEaseCaseStudy() {
             <p className="eyebrow">Project overview</p>
 
             <h2>
-              ParkEase gave me experience building inside a shared team
-              project.
+              ParkEase gave me experience building inside a shared team project.
             </h2>
           </div>
 
@@ -145,9 +149,7 @@ function ParkEaseCaseStudy() {
           <div>
             <p className="eyebrow">A useful debugging lesson</p>
 
-            <h2>
-              A login problem is not always just a login problem.
-            </h2>
+            <h2>A login problem is not always just a login problem.</h2>
           </div>
 
           <div className="case-study-copy">
@@ -178,9 +180,7 @@ function ParkEaseCaseStudy() {
           <div>
             <p className="eyebrow">Role-based flow</p>
 
-            <h2>
-              Successful authentication was only the first step.
-            </h2>
+            <h2>Successful authentication was only the first step.</h2>
           </div>
 
           <div className="parkease-role-list">
@@ -215,9 +215,7 @@ function ParkEaseCaseStudy() {
           <div>
             <p className="eyebrow">Working with another developer</p>
 
-            <h2>
-              Team projects make engineering decisions more visible.
-            </h2>
+            <h2>Team projects make engineering decisions more visible.</h2>
           </div>
 
           <div className="case-study-copy">

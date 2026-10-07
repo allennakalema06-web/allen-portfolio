@@ -1,75 +1,61 @@
-# React + TypeScript + Vite
+# Allen Nakalema — Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+My personal portfolio showcasing my software engineering, AI work, case studies, open-source contributions, articles, and founder journey.
 
-Currently, two official plugins are available:
+## Live site
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+https://allen-nakalema.pages.dev/
 
-## React Compiler
+## Built with
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- TypeScript
+- Vite
+- React Router
+- CSS
+- Cloudflare Pages
 
-## Expanding the ESLint configuration
+## Highlights
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Selected engineering projects
+- Detailed case studies
+- AI and software articles
+- Open-source work
+- Founder story
+- Light and dark themes
+- Responsive design
+- Downloadable CV
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## Featured work
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+### Nyondo Stock System
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+A Django business operations system for inventory, sales, suppliers, deposits, pricing rules and reporting.
 
-```
+### UgSL AI Practice Coach
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+An AI practice component being developed for a Ugandan Sign Language learning platform.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+### ParkEase
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+A collaborative Django parking-management project focused on backend logic and role-based workflows.
 
+## Development
+
+```bash
+npm install
+npm run dev
+
+Production checks:
+npm run lint
+npm run build
+
+Deployment:
+
+Deployed with Cloudflare Pages.
+Author
+Allen Nakalema
+- Portfolio: https://allen-nakalema.pages.dev/
+- GitHub: https://github.com/allennakalema06-web
+- LinkedIn: https://www.linkedin.com/in/allen-nakalema-99b8373aa/
 ```

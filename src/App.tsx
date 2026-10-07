@@ -1,7 +1,4 @@
-import {
-  createBrowserRouter,
-  RouterProvider,
-} from 'react-router-dom'
+import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import RootLayout from './layouts/RootLayout'
 
@@ -74,7 +71,7 @@ const router = createBrowserRouter([
       {
         path: 'articles/:slug',
         element: <ArticleDetail />,
-    },
+      },
       {
         path: '*',
         element: <NotFound />,

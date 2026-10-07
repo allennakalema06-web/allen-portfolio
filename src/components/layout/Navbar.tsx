@@ -33,9 +33,7 @@ function Navbar() {
               key={item.to}
               to={item.to}
               className={({ isActive }) =>
-                isActive
-                  ? 'navbar__link navbar__link--active'
-                  : 'navbar__link'
+                isActive ? 'navbar__link navbar__link--active' : 'navbar__link'
               }
             >
               {item.label}
@@ -124,9 +122,7 @@ function Navbar() {
             LinkedIn ↗
           </a>
 
-          <a href="mailto:allennakalema06@gmail.com">
-            Email ↗
-          </a>
+          <a href="mailto:allennakalema06@gmail.com">Email ↗</a>
         </div>
       </div>
     </header>

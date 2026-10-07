@@ -89,6 +89,29 @@ body {
     color var(--transition-normal);
 }
 
-[data-theme="dark"] body {
+[data-theme='dark'] body {
   background: var(--color-bg);
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: min(100% - 2rem, var(--container));
+  }
+
+  section {
+    scroll-margin-top: 5rem;
+  }
+
+  .eyebrow {
+    margin-bottom: 0.65rem;
+    font-size: 0.68rem;
+  }
+
+  p {
+    line-height: 1.65;
+  }
+
+  .button {
+    min-height: 44px;
+  }
 }

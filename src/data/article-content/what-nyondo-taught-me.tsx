@@ -2,8 +2,8 @@ export default function WhatNyondoTaughtMeContent() {
   return (
     <>
       <p className="article-intro">
-        Before Nyondo, much of what I knew about software engineering came
-        from lessons, exercises and smaller projects.
+        Before Nyondo, much of what I knew about software engineering came from
+        lessons, exercises and smaller projects.
       </p>
 
       <p>
@@ -13,16 +13,18 @@ export default function WhatNyondoTaughtMeContent() {
       </p>
 
       <p>
-        But Nyondo taught me something tutorials could not fully prepare me
-        for:
-        <strong> what happens when software has to represent a real business.</strong>
+        But Nyondo taught me something tutorials could not fully prepare me for:
+        <strong>
+          {' '}
+          what happens when software has to represent a real business.
+        </strong>
       </p>
 
       <h2>A real business is rarely as neat as a tutorial</h2>
 
       <p>
-        Tutorials usually give you the rules before you start building.
-        Real projects make you discover the rules first.
+        Tutorials usually give you the rules before you start building. Real
+        projects make you discover the rules first.
       </p>
 
       <p>
@@ -34,26 +36,24 @@ export default function WhatNyondoTaughtMeContent() {
         <li>What happens when different customers receive different prices?</li>
         <li>What if a customer pays for an order in installments?</li>
         <li>When should a deposit become a completed sale?</li>
-        <li>What happens when stock arrives before the supplier is fully paid?</li>
+        <li>
+          What happens when stock arrives before the supplier is fully paid?
+        </li>
         <li>Who should be allowed to perform each action?</li>
         <li>When should transport be free?</li>
       </ul>
 
       <p>
         Those questions changed the project for me. I was no longer just
-        building screens and database tables. I was trying to understand how
-        the business actually operated.
+        building screens and database tables. I was trying to understand how the
+        business actually operated.
       </p>
 
       <h2>The difficult part was often not writing the code</h2>
 
-      <p>
-        One of the clearest examples was customer pricing.
-      </p>
+      <p>One of the clearest examples was customer pricing.</p>
 
-      <p>
-        Nyondo uses different margins depending on the customer type:
-      </p>
+      <p>Nyondo uses different margins depending on the customer type:</p>
 
       <ul>
         <li>Normal customers — 15% above cost</li>
@@ -61,27 +61,23 @@ export default function WhatNyondoTaughtMeContent() {
         <li>Wholesalers — 5% above cost</li>
       </ul>
 
+      <p>The arithmetic itself is simple.</p>
+
       <p>
-        The arithmetic itself is simple.
+        The engineering question is bigger: where should that rule live? When
+        should it run? Which part of the system should be responsible for it?
+        How do I make sure the same rule is applied consistently every time a
+        sale is created?
       </p>
 
       <p>
-        The engineering question is bigger: where should that rule live?
-        When should it run? Which part of the system should be responsible for
-        it? How do I make sure the same rule is applied consistently every
-        time a sale is created?
-      </p>
-
-      <p>
-        That was one of the moments when I started understanding the
-        difference between writing code and designing a system.
+        That was one of the moments when I started understanding the difference
+        between writing code and designing a system.
       </p>
 
       <h2>Small business rules can change the architecture</h2>
 
-      <p>
-        The customer deposit workflow taught me this even more clearly.
-      </p>
+      <p>The customer deposit workflow taught me this even more clearly.</p>
 
       <p>
         A customer may start paying for an order without completing the full
@@ -90,9 +86,9 @@ export default function WhatNyondoTaughtMeContent() {
 
       <p>
         That means the system cannot treat every payment as a completed sale.
-        The deposit has to remain separate while the payment is incomplete.
-        Only after the required amount has been paid should the transaction
-        move into the normal sales flow and generate a receipt.
+        The deposit has to remain separate while the payment is incomplete. Only
+        after the required amount has been paid should the transaction move into
+        the normal sales flow and generate a receipt.
       </p>
 
       <p>
@@ -101,15 +97,15 @@ export default function WhatNyondoTaughtMeContent() {
       </p>
 
       <p>
-        Tutorials had taught me how to create models.
-        Nyondo made me ask what those models were supposed to represent.
+        Tutorials had taught me how to create models. Nyondo made me ask what
+        those models were supposed to represent.
       </p>
 
       <h2>Permissions are part of product design</h2>
 
       <p>
-        Nyondo also needed different responsibilities for Admins, Managers
-        and Attendants.
+        Nyondo also needed different responsibilities for Admins, Managers and
+        Attendants.
       </p>
 
       <p>
@@ -132,8 +128,8 @@ export default function WhatNyondoTaughtMeContent() {
       <h2>Deployment exposed assumptions I could not see locally</h2>
 
       <p>
-        Local development can make a project feel more complete than it
-        actually is.
+        Local development can make a project feel more complete than it actually
+        is.
       </p>
 
       <p>
@@ -141,9 +137,7 @@ export default function WhatNyondoTaughtMeContent() {
         environment I had been working with every day.
       </p>
 
-      <p>
-        Production removed many of those assumptions.
-      </p>
+      <p>Production removed many of those assumptions.</p>
 
       <p>
         I had to think about PostgreSQL, environment variables, allowed hosts,
@@ -156,14 +150,12 @@ export default function WhatNyondoTaughtMeContent() {
         users and data as my local environment.
       </p>
 
-      <p>
-        That experience changed how I think about deployment.
-      </p>
+      <p>That experience changed how I think about deployment.</p>
 
       <p>
-        Deployment is not the moment after engineering is finished.
-        It is part of engineering because it exposes assumptions the local
-        environment can hide.
+        Deployment is not the moment after engineering is finished. It is part
+        of engineering because it exposes assumptions the local environment can
+        hide.
       </p>
 
       <h2>Code review taught me to question my first solution</h2>
@@ -179,8 +171,8 @@ export default function WhatNyondoTaughtMeContent() {
       </p>
 
       <p>
-        Sometimes the final code change was small, but the lesson behind it
-        was much bigger.
+        Sometimes the final code change was small, but the lesson behind it was
+        much bigger.
       </p>
 
       <p>
@@ -208,8 +200,8 @@ export default function WhatNyondoTaughtMeContent() {
       </ol>
 
       <p>
-        Those questions now follow me into other projects, especially as I
-        move deeper into AI systems.
+        Those questions now follow me into other projects, especially as I move
+        deeper into AI systems.
       </p>
 
       <h2>Tutorials taught me how. Nyondo made me ask why.</h2>
@@ -227,21 +219,17 @@ export default function WhatNyondoTaughtMeContent() {
       <p>
         Some lessons only appear when the requirements are imperfect, the
         workflows depend on each other, production behaves differently from
-        localhost, and one small business decision affects several parts of
-        the application.
+        localhost, and one small business decision affects several parts of the
+        application.
       </p>
 
-      <p>
-        Nyondo gave me that experience.
-      </p>
+      <p>Nyondo gave me that experience.</p>
+
+      <p>It was not simply the project where I learned more Django.</p>
 
       <p>
-        It was not simply the project where I learned more Django.
-      </p>
-
-      <p>
-        It was the project where I began thinking much more seriously about
-        what it means to engineer a system.
+        It was the project where I began thinking much more seriously about what
+        it means to engineer a system.
       </p>
     </>
   )

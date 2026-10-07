@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const responsibilities = [
   {
@@ -40,6 +41,10 @@ const learnerFlow = [
 function UgslCaseStudy() {
   return (
     <main className="case-study ugsl-case-study">
+      <PageMeta
+        title="UgSL AI Practice Coach"
+        description="Case study of an AI practice component being developed for a Ugandan Sign Language learning platform."
+      />
       <section className="case-study-hero ugsl-case-study__hero">
         <div className="container case-study-hero__grid">
           <div className="case-study-hero__content">
@@ -103,8 +108,7 @@ function UgslCaseStudy() {
             <p>
               Learners move through lessons, practice, quizzes, progress and
               other learning activities, while teachers and administrators
-              support the content and platform workflows behind that
-              experience.
+              support the content and platform workflows behind that experience.
             </p>
 
             <p>
@@ -142,9 +146,7 @@ function UgslCaseStudy() {
           <div>
             <p className="eyebrow">The question behind the feature</p>
 
-            <h2>
-              What happens after a learner watches the lesson?
-            </h2>
+            <h2>What happens after a learner watches the lesson?</h2>
           </div>
 
           <div className="case-study-copy">
@@ -154,13 +156,11 @@ function UgslCaseStudy() {
               understand whether they are progressing.
             </p>
 
-            <p>
-              That is the space the AI Practice Coach is meant to explore.
-            </p>
+            <p>That is the space the AI Practice Coach is meant to explore.</p>
 
             <p>
-              Instead of treating AI as a separate feature added for novelty,
-              I want the coach to have a clear place inside the learner&apos;s
+              Instead of treating AI as a separate feature added for novelty, I
+              want the coach to have a clear place inside the learner&apos;s
               journey and solve a real learning need.
             </p>
           </div>
@@ -195,9 +195,7 @@ function UgslCaseStudy() {
           <div>
             <p className="eyebrow">Learner flow</p>
 
-            <h2>
-              The coach has to make sense inside the whole experience.
-            </h2>
+            <h2>The coach has to make sense inside the whole experience.</h2>
 
             <p>
               Designing the AI feature means understanding what happens before
@@ -221,9 +219,7 @@ function UgslCaseStudy() {
           <div>
             <p className="eyebrow">Architecture direction</p>
 
-            <h2>
-              The AI Coach is being separated from the main application.
-            </h2>
+            <h2>The AI Coach is being separated from the main application.</h2>
           </div>
 
           <div className="ugsl-architecture__diagram">
@@ -261,25 +257,13 @@ function UgslCaseStudy() {
           </div>
 
           <div className="ugsl-gallery__grid">
-            <img
-              src="/images/ugsl/ugsl2.jpeg"
-              alt="UgSL platform interface"
-            />
+            <img src="/images/ugsl/ugsl2.jpeg" alt="UgSL platform interface" />
 
-            <img
-              src="/images/ugsl/ugsl3.jpeg"
-              alt="UgSL learning experience"
-            />
+            <img src="/images/ugsl/ugsl3.jpeg" alt="UgSL learning experience" />
 
-            <img
-              src="/images/ugsl/ugsl4.jpeg"
-              alt="UgSL platform screen"
-            />
+            <img src="/images/ugsl/ugsl4.jpeg" alt="UgSL platform screen" />
 
-            <img
-              src="/images/ugsl/ugsl5.jpeg"
-              alt="UgSL learner interface"
-            />
+            <img src="/images/ugsl/ugsl5.jpeg" alt="UgSL learner interface" />
           </div>
         </div>
       </section>
@@ -289,9 +273,7 @@ function UgslCaseStudy() {
           <div>
             <p className="eyebrow">Important decisions</p>
 
-            <h2>
-              Some of the hardest work has happened before the AI itself.
-            </h2>
+            <h2>Some of the hardest work has happened before the AI itself.</h2>
           </div>
 
           <div className="case-study-copy">
@@ -334,9 +316,7 @@ function UgslCaseStudy() {
           <div>
             <p className="eyebrow">What this project is teaching me</p>
 
-            <h2>
-              AI engineering begins long before calling a model.
-            </h2>
+            <h2>AI engineering begins long before calling a model.</h2>
           </div>
 
           <div className="case-study-copy">
@@ -346,8 +326,8 @@ function UgslCaseStudy() {
             </p>
 
             <p>
-              The model matters, but so do the API contracts, the user flow,
-              the learning context, the data available to the system and what
+              The model matters, but so do the API contracts, the user flow, the
+              learning context, the data available to the system and what
               happens when the AI response reaches a real learner.
             </p>
 
@@ -365,7 +345,10 @@ function UgslCaseStudy() {
 
           <h2>
             This case study will grow
-            <span> as the coach moves from architecture to implementation.</span>
+            <span>
+              {' '}
+              as the coach moves from architecture to implementation.
+            </span>
           </h2>
 
           <div className="case-study-next__actions">

@@ -64,22 +64,22 @@ export const articles: Article[] = [
     },
   },
   {
-  slug: 'learning-ai-without-losing-the-human',
-  category: 'AI',
-  title: 'Learning AI without forgetting the human on the other side',
-  excerpt:
-    'What I am learning about building intelligent systems while keeping people, context and usefulness at the centre.',
-  date: 'September 2026',
-  readingTime: '5 min read',
-  status: 'published',
-  content: LearningAiWithoutLosingTheHumanContent,
-  relatedProject: {
-    label: 'UgSL AI Practice Coach',
-    path: '/work/ugsl-ai-practice-coach',
+    slug: 'learning-ai-without-losing-the-human',
+    category: 'AI',
+    title: 'Learning AI without forgetting the human on the other side',
+    excerpt:
+      'What I am learning about building intelligent systems while keeping people, context and usefulness at the centre.',
+    date: 'September 2026',
+    readingTime: '5 min read',
+    status: 'published',
+    content: LearningAiWithoutLosingTheHumanContent,
+    relatedProject: {
+      label: 'UgSL AI Practice Coach',
+      path: '/work/ugsl-ai-practice-coach',
+    },
+    relatedArticle: {
+      label: 'Why the problem should come before the technology',
+      path: '/articles/problem-before-technology',
+    },
   },
-  relatedArticle: {
-    label: 'Why the problem should come before the technology',
-    path: '/articles/problem-before-technology',
-  },
-},
 ]

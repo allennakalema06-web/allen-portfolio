@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const pillars = [
   {
@@ -30,6 +31,10 @@ const pillars = [
 function Apn() {
   return (
     <main className="apn-page">
+      <PageMeta
+        title="Allen Pearl Naturals"
+        description="The founder story behind Allen Pearl Naturals and how software engineering expanded the vision."
+      />
       <section className="apn-hero">
         <div className="container apn-hero__grid">
           <div className="apn-hero__content">
@@ -65,7 +70,7 @@ function Apn() {
 
           <div className="apn-hero__visual">
             <img
-              src="/images/apn/apn-logo.png"
+              src="/images/apn/apn-logo.webp"
               alt="Allen Pearl Naturals founder visual"
             />
 

@@ -1,8 +1,13 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 function Home() {
   return (
     <main>
+      <PageMeta
+        title="Software Engineer & AI Builder"
+        description="Portfolio of Allen Nakalema — software engineer, AI builder and founder building practical software, intelligent systems and technology-driven products."
+      />
       {/* HERO */}
       <section className="home-hero">
         <div className="container home-hero__grid">
@@ -12,20 +17,21 @@ function Home() {
             <p className="home-hero__hello">Hi, I'm Allen.</p>
 
             <h1>
-                I turn questions, ideas and real-world needs into
-                <span> things people can use.</span>
+              I turn questions, ideas and real-world needs into
+              <span> things people can use.</span>
             </h1>
 
             <p className="home-hero__intro">
-              I'm a software engineer, AI builder and founder from Uganda.
-              I'm deeply curious about understanding what people are actually experiencing, how things work, and how
-              technology can make something difficult feel simpler.
+              I'm a software engineer, AI builder and founder from Uganda. I'm
+              deeply curious about understanding what people are actually
+              experiencing, how things work, and how technology can make
+              something difficult feel simpler.
             </p>
 
             <p className="home-hero__intro">
-              That curiosity has taken me from building business software to
-              AI, open source, embedded systems, and to building a company of
-              my own.
+              That curiosity has taken me from building business software to AI,
+              open source, embedded systems, and to building a company of my
+              own.
             </p>
 
             <div className="home-hero__actions">
@@ -46,10 +52,7 @@ function Home() {
 
           <div className="home-hero__portrait">
             <div className="portrait-frame">
-              <img
-                src="/images/allen/portrait.png"
-                alt="Allen Nakalema"
-              />
+              <img src="/images/allen/portrait.webp" alt="Allen Nakalema" />
             </div>
 
             <p>
@@ -64,18 +67,18 @@ function Home() {
       <section className="story-section" id="work">
         <div className="container">
           <div className="story-intro">
-                <p className="eyebrow">The work</p>
+            <p className="eyebrow">The work</p>
 
-                <h2>
-                    This is where ideas start becoming
-                    <span> real systems.</span>
-                </h2>
+            <h2>
+              This is where ideas start becoming
+              <span> real systems.</span>
+            </h2>
 
-                <p className="story-intro__lead">
-                    Every project has taught me something different about users,
-                    businesses, technology, collaboration and the kind of engineer
-                    I'm becoming.
-                </p>
+            <p className="story-intro__lead">
+              Every project has taught me something different about users,
+              businesses, technology, collaboration and the kind of engineer I'm
+              becoming.
+            </p>
           </div>
 
           <div className="nyondo-story">
@@ -152,9 +155,7 @@ function Home() {
               <span> traditional software.</span>
             </h2>
 
-            <p>
-              The more I learn, the more interesting the questions become.
-            </p>
+            <p>The more I learn, the more interesting the questions become.</p>
           </div>
 
           <div className="frontier-grid">
@@ -172,8 +173,8 @@ function Home() {
                 <h3>UgSL AI Practice Coach</h3>
 
                 <p className="frontier-question">
-                  How can software understand context, respond intelligently
-                  and help someone practise what they're learning?
+                  How can software understand context, respond intelligently and
+                  help someone practise what they're learning?
                 </p>
 
                 <p>
@@ -271,8 +272,8 @@ function Home() {
           <p>Tools I currently build with</p>
 
           <div>
-            Python · Django · PostgreSQL · JavaScript · TypeScript · React ·
-            Git · APIs · Testing · AI Applications
+            Python · Django · PostgreSQL · JavaScript · TypeScript · React · Git
+            · APIs · Testing · AI Applications
           </div>
 
           <small>
@@ -289,8 +290,8 @@ function Home() {
             <p className="eyebrow">Collaborating with others</p>
 
             <h2>
-                Building changes when the code belongs to
-                <span> more than one person.</span>
+              Building changes when the code belongs to
+              <span> more than one person.</span>
             </h2>
           </div>
 
@@ -306,8 +307,8 @@ function Home() {
               </p>
 
               <p className="collaboration-quote">
-                Read first. Understand the system. Respect the conventions.
-                Then change what actually needs changing.
+                Read first. Understand the system. Respect the conventions. Then
+                change what actually needs changing.
               </p>
 
               <Link className="text-link" to="/open-source">
@@ -316,25 +317,23 @@ function Home() {
             </article>
 
             <article className="collaboration-item collaboration-item--parkease">
-                <p className="section-number">TEAM ENGINEERING</p>
+              <p className="section-number">TEAM ENGINEERING</p>
 
-                <p className="collaboration-item__mark">PE.</p>
+              <p className="collaboration-item__mark">PE.</p>
 
-                <h3>ParkEase</h3>
+              <h3>ParkEase</h3>
 
-                <p>
-                    ParkEase gave me experience building inside a shared project,
-                    where decisions, structure and code need to make sense to more
-                    than the person who wrote them.
-                </p>
+              <p>
+                ParkEase gave me experience building inside a shared project,
+                where decisions, structure and code need to make sense to more
+                than the person who wrote them.
+              </p>
 
-                <p>
-                    I worked mainly on the Django backend alongside Rose.
-                </p>
+              <p>I worked mainly on the Django backend alongside Rose.</p>
 
-                <Link className="text-link" to="/work">
-                    Explore ParkEase →
-                </Link>
+              <Link className="text-link" to="/work">
+                Explore ParkEase →
+              </Link>
             </article>
           </div>
         </div>
@@ -352,19 +351,18 @@ function Home() {
             </h2>
 
             <p>
-              Allen Pearl Naturals began in 2025 with wellness writing,
-              digital publishing and ideas about what practical wellness could
-              become.
+              Allen Pearl Naturals began in 2025 with wellness writing, digital
+              publishing and ideas about what practical wellness could become.
             </p>
 
             <p>
-              But there was something I couldn't yet do: build the technology
-              I imagined.
+              But there was something I couldn't yet do: build the technology I
+              imagined.
             </p>
 
             <p className="apn-highlight">
-              Learning software engineering didn't only give me a career.
-              It gave me another way to build my ideas.
+              Learning software engineering didn't only give me a career. It
+              gave me another way to build my ideas.
             </p>
 
             <p className="apn-ending">
@@ -380,25 +378,25 @@ function Home() {
 
           <div className="apn-story__media">
             <div className="apn-visual">
-                <img
+              <img
                 className="apn-visual__main"
                 src="/images/apn/apn-preview.png"
                 alt="Allen Pearl Naturals website"
-                />
+              />
 
-                <div className="apn-visual__brand">
-                    <img
-                    src="/images/apn/apn-logo.png"
-                    alt="Allen Pearl Naturals logo"
+              <div className="apn-visual__brand">
+                <img
+                  src="/images/apn/apn-logo.webp"
+                  alt="Allen Pearl Naturals logo"
                 />
 
                 <div>
-                    <strong>Allen Pearl Naturals</strong>
-                    <span>Founder venture · In development</span>
+                  <strong>Allen Pearl Naturals</strong>
+                  <span>Founder venture · In development</span>
                 </div>
+              </div>
             </div>
-        </div>
-        </div>
+          </div>
         </div>
       </section>
 
@@ -427,8 +425,8 @@ function Home() {
               <div>
                 <h3>Groundbreaker Talents</h3>
                 <p>
-                  Software stops being something I admire and becomes
-                  something I can create.
+                  Software stops being something I admire and becomes something
+                  I can create.
                 </p>
               </div>
             </article>
@@ -438,8 +436,8 @@ function Home() {
               <div>
                 <h3>Computer Science Essentials with Python</h3>
                 <p>
-                  I complete my Refactory Academy software engineering
-                  programme through Groundbreaker Talents.
+                  I complete my Refactory Academy software engineering programme
+                  through Groundbreaker Talents.
                 </p>
               </div>
             </article>
@@ -495,17 +493,15 @@ function Home() {
             </h2>
 
             <p>
-              Writing is another way I make sense of what I'm learning,
-              building and becoming.
+              Writing is another way I make sense of what I'm learning, building
+              and becoming.
             </p>
           </div>
 
           <div className="article-list">
             <article>
               <span>Engineering</span>
-              <h3>
-                Why the problem should come before the technology
-              </h3>
+              <h3>Why the problem should come before the technology</h3>
               <small>Coming soon</small>
             </article>
 
@@ -556,40 +552,40 @@ function Home() {
       {/* CONTACT */}
       <section className="home-contact">
         <div className="container home-contact__inner">
-            <p className="eyebrow">Before you go</p>
+          <p className="eyebrow">Before you go</p>
 
-            <h2>
-                Good work usually starts with
-                <span> a conversation.</span>
-            </h2>
+          <h2>
+            Good work usually starts with
+            <span> a conversation.</span>
+          </h2>
 
-            <p className="home-contact__lead">
-                I'm interested in thoughtful engineering problems, AI work,
-                collaborative projects and conversations with people who are
-                building something meaningful.
-            </p>
+          <p className="home-contact__lead">
+            I'm interested in thoughtful engineering problems, AI work,
+            collaborative projects and conversations with people who are
+            building something meaningful.
+          </p>
 
-            <p className="home-contact__note">
-                If that's what brought you here, my inbox is open.
-            </p>
+          <p className="home-contact__note">
+            If that's what brought you here, my inbox is open.
+          </p>
 
-            <div className="home-contact__actions">
-                <a
-                className="button button--primary"
-                href="mailto:allennakalema06@gmail.com"
-                >
-                    Start a conversation →
-                </a>
+          <div className="home-contact__actions">
+            <a
+              className="button button--primary"
+              href="mailto:allennakalema06@gmail.com"
+            >
+              Start a conversation →
+            </a>
 
-                <a
-                className="button button--secondary"
-                href="https://www.linkedin.com/in/allen-nakalema-99b8373aa/"
-                target="_blank"
-                rel="noreferrer"
-                >
-                    Find me on LinkedIn ↗
-                </a>
-            </div>
+            <a
+              className="button button--secondary"
+              href="https://www.linkedin.com/in/allen-nakalema-99b8373aa/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Find me on LinkedIn ↗
+            </a>
+          </div>
         </div>
       </section>
     </main>

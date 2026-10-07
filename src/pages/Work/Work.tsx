@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-
+import PageMeta from '../../components/common/PageMeta'
 const projects = [
   {
     id: 'nyondo',
@@ -45,6 +45,10 @@ const projects = [
 function Work() {
   return (
     <main className="work-page">
+      <PageMeta
+        title="Work"
+        description="Selected software engineering, AI, open-source and product work by Allen Nakalema."
+      />
       <section className="work-hero">
         <div className="container work-hero__inner">
           <p className="eyebrow">Selected work</p>
@@ -72,9 +76,7 @@ function Work() {
                 }`}
                 key={project.id}
               >
-                <div className="work-project__number">
-                  {project.number}
-                </div>
+                <div className="work-project__number">{project.number}</div>
 
                 <div className="work-project__content">
                   <div className="work-project__meta">
@@ -84,9 +86,7 @@ function Work() {
 
                   <h2>{project.title}</h2>
 
-                  <p className="work-project__role">
-                    My role · {project.role}
-                  </p>
+                  <p className="work-project__role">My role · {project.role}</p>
 
                   <p className="work-project__description">
                     {project.description}
@@ -99,10 +99,7 @@ function Work() {
                   </div>
 
                   <div className="work-project__actions">
-                    <Link
-                      className="text-link"
-                      to={project.caseStudy}
-                    >
+                    <Link className="text-link" to={project.caseStudy}>
                       View case study →
                     </Link>
 
@@ -143,8 +140,8 @@ function Work() {
             <p className="eyebrow">Open source</p>
 
             <h2>
-              Building inside someone else&apos;s codebase taught me a
-              different kind of discipline.
+              Building inside someone else&apos;s codebase taught me a different
+              kind of discipline.
             </h2>
           </div>
 
@@ -159,8 +156,8 @@ function Work() {
 
             <p>
               The work required reading the surrounding code first,
-              understanding the project conventions, making targeted changes
-              and verifying that validation and builds still passed.
+              understanding the project conventions, making targeted changes and
+              verifying that validation and builds still passed.
             </p>
 
             <Link className="text-link" to="/open-source">
@@ -230,9 +227,9 @@ function Work() {
           </h2>
 
           <p>
-            If you&apos;re curious about how I approach engineering, start
-            with the Nyondo case study, it carries the most complete example
-            of my thinking so far.
+            If you&apos;re curious about how I approach engineering, start with
+            the Nyondo case study, it carries the most complete example of my
+            thinking so far.
           </p>
 
           <div className="work-cta__actions">

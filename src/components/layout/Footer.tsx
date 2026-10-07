@@ -4,7 +4,7 @@ function Footer() {
       <div className="container footer__inner">
         <div>
           <strong>ALLEN.</strong>
-          <p>Software Engineer · AI Systems Builder · Founder</p>
+          <p>Software Engineer · AI Builder · Founder</p>
         </div>
 
         <div className="footer__links">
@@ -24,9 +24,7 @@ function Footer() {
             LinkedIn ↗
           </a>
 
-          <a href="mailto:allennakalema06@gmail.com">
-            Email ↗
-          </a>
+          <a href="mailto:allennakalema06@gmail.com">Email ↗</a>
         </div>
 
         <small>© 2026 Allen Nakalema</small>

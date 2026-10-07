@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const contributions = [
   {
@@ -42,6 +43,10 @@ const contributions = [
 function OpenSource() {
   return (
     <main className="open-source-page">
+      <PageMeta
+        title="Open Source"
+        description="Open-source contributions by Allen Nakalema, including work with existing codebases, validation and collaborative engineering."
+      />
       <section className="open-source-hero">
         <div className="container open-source-hero__grid">
           <div>
@@ -71,9 +76,7 @@ function OpenSource() {
           <div>
             <p className="eyebrow">Open Data Ensemble</p>
 
-            <h2>
-              Small changes can still require careful engineering.
-            </h2>
+            <h2>Small changes can still require careful engineering.</h2>
           </div>
 
           <div className="open-source-copy">
@@ -176,15 +179,13 @@ function OpenSource() {
             <p className="eyebrow">What changed in my thinking</p>
 
             <h2>
-              In my own project, I know why the code exists.
-              In open source, I have to discover that first.
+              In my own project, I know why the code exists. In open source, I
+              have to discover that first.
             </h2>
           </div>
 
           <div className="open-source-copy">
-            <p>
-              That difference matters.
-            </p>
+            <p>That difference matters.</p>
 
             <p>
               When I enter an unfamiliar codebase, I now spend more time reading
@@ -223,7 +224,10 @@ function OpenSource() {
 
           <h2>
             I want to keep becoming the kind of engineer who can
-            <span> enter a system, understand it and contribute responsibly.</span>
+            <span>
+              {' '}
+              enter a system, understand it and contribute responsibly.
+            </span>
           </h2>
 
           <div className="open-source-next__actions">

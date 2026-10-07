@@ -27,22 +27,16 @@
 .story-section,
 .collaboration-section,
 .journey-story {
-  background:
-    linear-gradient(
-      180deg,
-      color-mix(in srgb, var(--color-surface) 50%, transparent),
-      transparent
-    );
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--color-surface) 50%, transparent),
+    transparent
+  );
 }
 
 .frontier-section,
 .writing-section {
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 72%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 72%, transparent);
 
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
@@ -55,7 +49,6 @@
   letter-spacing: 0.13em;
   text-transform: uppercase;
 }
-
 
 .home-hero__grid {
   display: grid;
@@ -176,12 +169,11 @@
 }
 
 .portrait-frame::before {
-  content: "";
+  content: '';
   position: absolute;
   inset: 1rem;
   z-index: 2;
-  border: 1px solid
-    color-mix(in srgb, var(--color-accent) 35%, transparent);
+  border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
   border-radius: 1.4rem 1.4rem 0.4rem 1.4rem;
   pointer-events: none;
 }
@@ -219,17 +211,16 @@
 .story-section,
 .collaboration-section,
 .journey-story {
-  background:
-    linear-gradient(
-      180deg,
-      rgba(255, 255, 255, 0.16),
-      transparent 75%
-    );
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.16),
+    transparent 75%
+  );
 }
 
-[data-theme="dark"] .story-section,
-[data-theme="dark"] .collaboration-section,
-[data-theme="dark"] .journey-story {
+[data-theme='dark'] .story-section,
+[data-theme='dark'] .collaboration-section,
+[data-theme='dark'] .journey-story {
   background: transparent;
 }
 
@@ -250,19 +241,12 @@
 .apn-visual {
   padding: 1rem;
 
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 85%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 85%, transparent);
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
 
-  box-shadow:
-    0 24px 70px
-    color-mix(in srgb, var(--color-text) 10%, transparent);
+  box-shadow: 0 24px 70px color-mix(in srgb, var(--color-text) 10%, transparent);
 
   backdrop-filter: blur(16px);
 }
@@ -311,12 +295,11 @@
 
   padding: 1.5rem;
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--color-accent-soft),
-      color-mix(in srgb, var(--color-surface) 80%, transparent)
-    );
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-soft),
+    color-mix(in srgb, var(--color-surface) 80%, transparent)
+  );
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -531,8 +514,7 @@
   display: grid;
   grid-template-columns: 50px 1fr;
   gap: 1rem;
-  border-bottom: 1px solid
-    color-mix(in srgb, var(--color-bg) 17%, transparent);
+  border-bottom: 1px solid color-mix(in srgb, var(--color-bg) 17%, transparent);
   font-size: 1.02rem;
 }
 
@@ -545,8 +527,7 @@
 .tools-line {
   margin-top: 4rem;
   padding-top: 2rem;
-  border-top: 1px solid
-    color-mix(in srgb, var(--color-bg) 17%, transparent);
+  border-top: 1px solid color-mix(in srgb, var(--color-bg) 17%, transparent);
 }
 
 .tools-line > p {
@@ -718,11 +699,7 @@
       color-mix(in srgb, var(--color-accent) 22%, transparent),
       transparent 30%
     ),
-    linear-gradient(
-      135deg,
-      var(--color-accent-soft),
-      var(--color-bg)
-    );
+    linear-gradient(135deg, var(--color-accent-soft), var(--color-bg));
 }
 
 .home-contact__inner {
@@ -780,14 +757,18 @@
     padding-block: 3.5rem;
   }
 
-  .home-hero h1,
+  .home-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
   .story-intro h2,
   .frontier-heading h2,
   .thinking-grid h2,
   .apn-story h2,
   .writing-grid h2,
   .home-contact h2 {
-    font-size: clamp(2.5rem, 13vw, 4rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
   }
 
   .home-hero__portrait {
@@ -813,12 +794,7 @@
 .footer {
   padding-block: 2.5rem;
 
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 72%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 72%, transparent);
 
   border-top: 1px solid var(--color-border);
 }
@@ -865,7 +841,7 @@
 }
 
 .footer__links a::after {
-  content: "";
+  content: '';
 
   position: absolute;
   right: 0;
@@ -944,7 +920,7 @@
 
   color: var(--color-text);
 
-  font-size: clamp(3rem, 7vw, 6rem);
+  font-size: clamp(2.4rem, 10vw, 3.8rem);
   font-weight: 600;
   line-height: 0.97;
   letter-spacing: -0.06em;
@@ -1043,6 +1019,6 @@
   }
 
   .articles-hero h1 {
-    font-size: clamp(2.6rem, 13vw, 4rem);
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
   }
 }

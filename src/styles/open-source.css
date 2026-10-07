@@ -67,12 +67,11 @@
   display: grid;
   place-items: center;
 
-  background:
-    linear-gradient(
-      135deg,
-      var(--color-accent-soft),
-      var(--color-surface)
-    );
+  background: linear-gradient(
+    135deg,
+    var(--color-accent-soft),
+    var(--color-surface)
+  );
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -149,12 +148,7 @@
 
 .open-source-example,
 .open-source-thinking {
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 78%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 78%, transparent);
 }
 
 .open-source-example__steps {
@@ -266,13 +260,17 @@
     padding-block: 2.4rem;
   }
 
-  .open-source-hero h1,
+  .open-source-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
   .open-source-overview h2,
   .open-source-section-heading h2,
   .open-source-example h2,
   .open-source-thinking h2,
   .open-source-next h2 {
-    font-size: clamp(2.2rem, 11vw, 3.8rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
   }
 
   .open-source-grid {

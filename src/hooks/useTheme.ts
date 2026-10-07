@@ -10,9 +10,7 @@ function getInitialTheme(): Theme {
     return savedTheme
   }
 
-  const prefersDark = window.matchMedia(
-    '(prefers-color-scheme: dark)',
-  ).matches
+  const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches
 
   return prefersDark ? 'dark' : 'light'
 }
@@ -26,9 +24,7 @@ export function useTheme() {
   }, [theme])
 
   function toggleTheme() {
-    setTheme((currentTheme) =>
-      currentTheme === 'light' ? 'dark' : 'light',
-    )
+    setTheme((currentTheme) => (currentTheme === 'light' ? 'dark' : 'light'))
   }
 
   return {

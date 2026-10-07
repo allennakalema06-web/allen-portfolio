@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const journey = [
   {
@@ -24,7 +25,7 @@ const journey = [
     title: 'Computer Science Essentials with Python',
     label: 'Refactory Academy',
     description:
-      'I completed my software engineering training through Refactory Academy, working with Python, Django, web development, Git, debugging and software engineering fundamentals.',
+      'I completed the Computer Science Essentials with Python programme delivered through Groundbreaker Talents, strengthening my foundation in Python, Django, web development, Git, debugging and software engineering fundamentals.',
     lesson:
       'This period gave me the technical confidence to move from exercises into larger systems such as Nyondo.',
   },
@@ -69,6 +70,10 @@ const journey = [
 function Journey() {
   return (
     <main className="journey-page">
+      <PageMeta
+        title="Journey"
+        description="Allen Nakalema's learning journey across software engineering, AI, open source and IoT."
+      />
       <section className="journey-hero">
         <div className="container journey-hero__inner">
           <p className="eyebrow">My journey</p>
@@ -79,8 +84,8 @@ function Journey() {
           </h1>
 
           <p>
-            My path into technology has not been a straight line toward one
-            job title. It has been a sequence of questions, projects and
+            My path into technology has not been a straight line toward one job
+            title. It has been a sequence of questions, projects and
             opportunities that kept expanding what I thought was possible.
           </p>
         </div>
@@ -92,8 +97,8 @@ function Journey() {
             <p className="eyebrow">The chapters so far</p>
 
             <p>
-              I care less about collecting milestones than about what each
-              stage added to the way I think, build and solve problems.
+              I care less about collecting milestones than about what each stage
+              added to the way I think, build and solve problems.
             </p>
           </div>
 
@@ -105,14 +110,10 @@ function Journey() {
                   <div />
                 </div>
 
-                <div className="journey-entry__date">
-                  {item.date}
-                </div>
+                <div className="journey-entry__date">{item.date}</div>
 
                 <div className="journey-entry__content">
-                  <p className="journey-entry__label">
-                    {item.label}
-                  </p>
+                  <p className="journey-entry__label">{item.label}</p>
 
                   <h2>{item.title}</h2>
 

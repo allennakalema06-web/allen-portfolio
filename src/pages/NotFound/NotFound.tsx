@@ -11,9 +11,7 @@ function NotFound() {
           <span> somewhere else.</span>
         </h1>
 
-        <p>
-          The link may have changed, or the page may no longer exist.
-        </p>
+        <p>The link may have changed, or the page may no longer exist.</p>
 
         <div className="not-found__actions">
           <Link className="button button--primary" to="/">

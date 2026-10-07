@@ -49,12 +49,7 @@
 .contact-panel {
   padding: clamp(1.5rem, 4vw, 2.5rem);
 
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 78%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 78%, transparent);
 
   border: 1px solid var(--color-border);
   border-radius: var(--radius-lg);
@@ -156,12 +151,7 @@
 .contact-options__grid > a:hover {
   padding-inline: 1rem;
 
-  background:
-    color-mix(
-      in srgb,
-      var(--color-accent-soft) 55%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-accent-soft) 55%, transparent);
 }
 
 .contact-options__grid > a > span:first-child {
@@ -241,10 +231,14 @@
     padding-block: 3.5rem;
   }
 
-  .contact-hero h1,
+  .contact-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
   .contact-options__heading h2,
   .contact-close h2 {
-    font-size: clamp(2.4rem, 12vw, 4rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
   }
 
   .contact-panel__meta {

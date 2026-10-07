@@ -2,14 +2,14 @@ export default function ProblemBeforeTechnologyContent() {
   return (
     <>
       <p className="article-intro">
-        When I first started learning software engineering, it was easy
-        to think that building meant choosing a language, framework or
-        library and then writing code.
+        When I first started learning software engineering, it was easy to think
+        that building meant choosing a language, framework or library and then
+        writing code.
       </p>
 
       <p>
-        The more real projects I work on, the more I see that this is
-        usually not where the important thinking begins.
+        The more real projects I work on, the more I see that this is usually
+        not where the important thinking begins.
       </p>
 
       <p>
@@ -19,24 +19,22 @@ export default function ProblemBeforeTechnologyContent() {
 
       <h2>A tool can solve the wrong problem very well</h2>
 
+      <p>Technology can be impressive and still be unnecessary.</p>
+
       <p>
-        Technology can be impressive and still be unnecessary.
+        A system can be fast, modern and technically correct while still failing
+        because it does not match the way people actually work.
       </p>
 
       <p>
-        A system can be fast, modern and technically correct while still
-        failing because it does not match the way people actually work.
+        That is one of the biggest lessons I took from building the Nyondo Stock
+        System.
       </p>
 
       <p>
-        That is one of the biggest lessons I took from building the
-        Nyondo Stock System.
-      </p>
-
-      <p>
-        The challenge was not simply to build an inventory application.
-        The real work was understanding how the hardware business handled
-        stock, suppliers, customer types, deposits, transport and sales.
+        The challenge was not simply to build an inventory application. The real
+        work was understanding how the hardware business handled stock,
+        suppliers, customer types, deposits, transport and sales.
       </p>
 
       <p>
@@ -46,17 +44,14 @@ export default function ProblemBeforeTechnologyContent() {
 
       <h2>Real workflows are usually messier than tutorials</h2>
 
-      <p>
-        Tutorials are useful because they simplify problems.
-      </p>
+      <p>Tutorials are useful because they simplify problems.</p>
 
       <p>Real businesses rarely behave that neatly.</p>
 
       <p>
-        One customer may pay in full. Another may pay through
-        installments. A retailer may receive a different margin from a
-        wholesaler. A delivery rule may depend on both order value and
-        distance.
+        One customer may pay in full. Another may pay through installments. A
+        retailer may receive a different margin from a wholesaler. A delivery
+        rule may depend on both order value and distance.
       </p>
 
       <p>
@@ -65,15 +60,13 @@ export default function ProblemBeforeTechnologyContent() {
       </p>
 
       <p>
-        If I misunderstand them, I can build perfectly valid code that
-        produces the wrong result.
+        If I misunderstand them, I can build perfectly valid code that produces
+        the wrong result.
       </p>
 
       <h2>The same lesson applies to AI</h2>
 
-      <p>
-        I am seeing the same pattern again as I move deeper into AI.
-      </p>
+      <p>I am seeing the same pattern again as I move deeper into AI.</p>
 
       <p>It is tempting to begin with questions like:</p>
 
@@ -90,14 +83,14 @@ export default function ProblemBeforeTechnologyContent() {
       </p>
 
       <p>
-        With the UgSL AI Practice Coach, the more important question is
-        what the learner needs after watching a lesson.
+        With the UgSL AI Practice Coach, the more important question is what the
+        learner needs after watching a lesson.
       </p>
 
       <p>
-        What should practice feel like? What feedback is actually useful?
-        What information does the system need? What belongs to the AI
-        service and what belongs to the main platform?
+        What should practice feel like? What feedback is actually useful? What
+        information does the system need? What belongs to the AI service and
+        what belongs to the main platform?
       </p>
 
       <p>
@@ -122,9 +115,8 @@ export default function ProblemBeforeTechnologyContent() {
       </ol>
 
       <p>
-        I do not always get the answers right immediately. Sometimes the
-        answers change once I build a first version and see how people
-        react.
+        I do not always get the answers right immediately. Sometimes the answers
+        change once I build a first version and see how people react.
       </p>
 
       <p>
@@ -135,25 +127,20 @@ export default function ProblemBeforeTechnologyContent() {
       <h2>Technology should earn its place</h2>
 
       <p>
-        I still enjoy learning new technologies. I am curious about AI,
-        APIs, embedded systems and the tools that make ambitious products
-        possible.
+        I still enjoy learning new technologies. I am curious about AI, APIs,
+        embedded systems and the tools that make ambitious products possible.
       </p>
 
-      <p>
-        But I increasingly want every technology choice to have a reason.
-      </p>
+      <p>But I increasingly want every technology choice to have a reason.</p>
 
       <p>
-        Not because it is popular. Not because it looks advanced. Not
-        because everyone else is using it.
+        Not because it is popular. Not because it looks advanced. Not because
+        everyone else is using it.
       </p>
 
       <p>Because it helps solve the problem better.</p>
 
-      <p>
-        That is the kind of engineer I am trying to become.
-      </p>
+      <p>That is the kind of engineer I am trying to become.</p>
     </>
   )
 }

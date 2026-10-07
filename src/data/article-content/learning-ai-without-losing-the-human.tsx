@@ -35,9 +35,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         predictable behaviour.
       </p>
 
-      <p>
-        AI is one component inside that larger system.
-      </p>
+      <p>AI is one component inside that larger system.</p>
 
       <h2>UgSL is making this lesson very real for me</h2>
 
@@ -46,9 +44,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         the question of which model or AI framework to use.
       </p>
 
-      <p>
-        The more important questions are about the learner.
-      </p>
+      <p>The more important questions are about the learner.</p>
 
       <ul>
         <li>What happens after they finish a lesson?</li>
@@ -81,9 +77,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         lesson, practice activity, learner level or progress state.
       </p>
 
-      <p>
-        Without that context, intelligence can easily become noise.
-      </p>
+      <p>Without that context, intelligence can easily become noise.</p>
 
       <h2>The human experience is part of the engineering</h2>
 
@@ -92,9 +86,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         concerns.
       </p>
 
-      <p>
-        The more I build, the more connected they become.
-      </p>
+      <p>The more I build, the more connected they become.</p>
 
       <p>
         If the API returns the right data but the user does not understand what
@@ -124,8 +116,8 @@ export default function LearningAiWithoutLosingTheHumanContent() {
       </p>
 
       <p>
-        It should influence how the product is designed from the beginning:
-        how information is presented, how interaction works, how feedback is
+        It should influence how the product is designed from the beginning: how
+        information is presented, how interaction works, how feedback is
         delivered and whether the system supports the people it is meant to
         serve.
       </p>
@@ -139,13 +131,11 @@ export default function LearningAiWithoutLosingTheHumanContent() {
       <h2>I am learning to ask better questions before reaching for AI</h2>
 
       <p>
-        I am still early in my AI engineering journey, but I am already
-        noticing a shift in the questions I ask.
+        I am still early in my AI engineering journey, but I am already noticing
+        a shift in the questions I ask.
       </p>
 
-      <p>
-        Instead of beginning with:
-      </p>
+      <p>Instead of beginning with:</p>
 
       <ul>
         <li>Which model should I use?</li>
@@ -153,9 +143,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         <li>Can this be automated?</li>
       </ul>
 
-      <p>
-        I increasingly want to begin with:
-      </p>
+      <p>I increasingly want to begin with:</p>
 
       <ol>
         <li>What is the person actually trying to accomplish?</li>
@@ -166,13 +154,9 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         <li>What should happen when the AI is uncertain or wrong?</li>
       </ol>
 
-      <p>
-        Those questions do not make the engineering less technical.
-      </p>
+      <p>Those questions do not make the engineering less technical.</p>
 
-      <p>
-        They make the technology easier to justify.
-      </p>
+      <p>They make the technology easier to justify.</p>
 
       <h2>Intelligence should increase usefulness, not distance</h2>
 
@@ -181,9 +165,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         ones we use today.
       </p>
 
-      <p>
-        That makes the human side more important, not less.
-      </p>
+      <p>That makes the human side more important, not less.</p>
 
       <p>
         I want to keep learning how models work, how to build with them, how to
@@ -195,9 +177,7 @@ export default function LearningAiWithoutLosingTheHumanContent() {
         understood, supported and clear about what happens next.
       </p>
 
-      <p>
-        For me, that is what makes AI worth building.
-      </p>
+      <p>For me, that is what makes AI worth building.</p>
     </>
   )
 }

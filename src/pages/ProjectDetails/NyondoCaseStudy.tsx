@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import PageMeta from '../../components/common/PageMeta'
 
 const capabilities = [
   {
@@ -69,6 +70,10 @@ const process = [
 function NyondoCaseStudy() {
   return (
     <main className="case-study">
+      <PageMeta
+        title="Nyondo Stock System"
+        description="Case study of a Django business operations system for inventory, sales, deposits, suppliers and reporting."
+      />
       <section className="case-study-hero">
         <div className="container case-study-hero__grid">
           <div className="case-study-hero__content">
@@ -86,19 +91,26 @@ function NyondoCaseStudy() {
             </p>
 
             <div className="case-study-hero__actions">
+              <a className="button button--primary" href="#nyondo-demo">
+                Watch demo ↓
+              </a>
               <a
                 className="button button--primary"
                 href="https://nyondo-stock-system-vfb9.onrender.com/"
                 target="_blank"
                 rel="noreferrer"
               >
-                View live system ↗
+                Open live system ↗
               </a>
 
               <Link className="button button--secondary" to="/work">
                 Back to work
               </Link>
             </div>
+            <p className="demo-note">
+              The live system is hosted on a free service and may take a moment
+              to wake up. For the fastest overview, watch the demo below.
+            </p>
           </div>
 
           <div className="case-study-hero__visual">
@@ -171,8 +183,8 @@ function NyondoCaseStudy() {
             <p className="eyebrow">The business logic</p>
 
             <h2>
-              Real businesses contain rules that rarely fit inside a simple
-              CRUD tutorial.
+              Real businesses contain rules that rarely fit inside a simple CRUD
+              tutorial.
             </h2>
           </div>
 
@@ -183,8 +195,8 @@ function NyondoCaseStudy() {
               <h3>Different customers receive different margins.</h3>
 
               <p>
-                Normal customers are priced at 15% above cost, retailers at
-                10%, and wholesalers at 5%.
+                Normal customers are priced at 15% above cost, retailers at 10%,
+                and wholesalers at 5%.
               </p>
             </article>
 
@@ -194,8 +206,8 @@ function NyondoCaseStudy() {
               <h3>Delivery cost depends on order value and distance.</h3>
 
               <p>
-                Orders of at least UGX 500,000 receive free transport within
-                10 kilometres. Other qualifying deliveries use the configured
+                Orders of at least UGX 500,000 receive free transport within 10
+                kilometres. Other qualifying deliveries use the configured
                 transport charge.
               </p>
             </article>
@@ -226,7 +238,7 @@ function NyondoCaseStudy() {
         </div>
       </section>
 
-      <section className="case-study-demo">
+      <section className="case-study-demo" id="nyondo-demo">
         <div className="container">
           <div className="case-study-section-heading">
             <p className="eyebrow">The system in motion</p>
@@ -245,7 +257,6 @@ function NyondoCaseStudy() {
               poster="/images/nyondo/dashboard.png"
             >
               <source src="/videos/nyondo-demo.mp4" type="video/mp4" />
-
               Your browser does not support the video element.
             </video>
           </div>
@@ -282,9 +293,7 @@ function NyondoCaseStudy() {
           <div>
             <p className="eyebrow">Application structure</p>
 
-            <h2>
-              I separated the system around business responsibilities.
-            </h2>
+            <h2>I separated the system around business responsibilities.</h2>
           </div>
 
           <div className="case-study-apps">
@@ -296,8 +305,7 @@ function NyondoCaseStudy() {
             <article>
               <span>inventory_app</span>
               <p>
-                Categories, products, suppliers, stock entries and
-                adjustments.
+                Categories, products, suppliers, stock entries and adjustments.
               </p>
             </article>
 
@@ -396,8 +404,8 @@ function NyondoCaseStudy() {
               <p>
                 Deployment exposed problems that were not obvious locally,
                 including database seeding and authentication behaviour. That
-                experience taught me to treat deployment as part of
-                engineering, not as the final upload step.
+                experience taught me to treat deployment as part of engineering,
+                not as the final upload step.
               </p>
             </article>
           </div>
@@ -410,8 +418,8 @@ function NyondoCaseStudy() {
             <p className="eyebrow">What Nyondo changed for me</p>
 
             <h2>
-              It was the project where software engineering started feeling
-              less like exercises and more like systems thinking.
+              It was the project where software engineering started feeling less
+              like exercises and more like systems thinking.
             </h2>
           </div>
 

@@ -1,6 +1,12 @@
+import PageMeta from '../../components/common/PageMeta'
+
 function Contact() {
   return (
     <main className="contact-page">
+      <PageMeta
+        title="Contact"
+        description="Get in touch with Allen Nakalema for software engineering, AI, collaboration and product opportunities."
+      />
       <section className="contact-hero">
         <div className="container contact-hero__grid">
           <div>

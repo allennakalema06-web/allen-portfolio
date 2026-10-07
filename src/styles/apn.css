@@ -112,12 +112,11 @@
 
   padding: 0.8rem;
 
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface-elevated) 85%,
-      transparent
-    );
+  background: color-mix(
+    in srgb,
+    var(--color-surface-elevated) 85%,
+    transparent
+  );
 
   border: 1px solid var(--color-border);
   border-radius: 1.2rem;
@@ -139,12 +138,7 @@
 
 .apn-preview,
 .apn-tech {
-  background:
-    color-mix(
-      in srgb,
-      var(--color-surface) 78%,
-      transparent
-    );
+  background: color-mix(in srgb, var(--color-surface) 78%, transparent);
 
   border-block: 1px solid var(--color-border);
 }
@@ -274,14 +268,18 @@
     padding-block: 2.4rem;
   }
 
-  .apn-hero h1,
+  .apn-hero h1 {
+    font-size: clamp(2.4rem, 10vw, 3.8rem);
+  }
   .apn-origin h2,
   .apn-preview h2,
   .apn-section-heading h2,
   .apn-tech h2,
   .apn-founder h2,
   .apn-next h2 {
-    font-size: clamp(2.2rem, 11vw, 3.8rem);
+    font-size: clamp(2rem, 9vw, 3.2rem);
+    line-height: 1;
+    letter-spacing: -0.045em;
   }
 
   .apn-pillars {

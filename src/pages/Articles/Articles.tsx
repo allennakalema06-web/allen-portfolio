@@ -1,9 +1,14 @@
 import { Link } from 'react-router-dom'
 import { articles } from '../../data/articles'
+import PageMeta from '../../components/common/PageMeta'
 
 function Articles() {
   return (
     <main className="articles-page">
+      <PageMeta
+        title="Articles"
+        description="Articles by Allen Nakalema about software engineering, AI, systems thinking and building products."
+      />
       <section className="articles-hero">
         <div className="container articles-hero__inner">
           <p className="eyebrow">Articles</p>
@@ -26,9 +31,7 @@ function Articles() {
           <div className="articles-list">
             {articles.map((article, index) => (
               <article className="article-card" key={article.slug}>
-                <div className="article-card__number">
-                  0{index + 1}
-                </div>
+                <div className="article-card__number">0{index + 1}</div>
 
                 <div className="article-card__content">
                   <div className="article-card__meta">
@@ -38,9 +41,7 @@ function Articles() {
 
                   <h2>{article.title}</h2>
 
-                  <p className="article-card__excerpt">
-                    {article.excerpt}
-                  </p>
+                  <p className="article-card__excerpt">{article.excerpt}</p>
 
                   <div className="article-card__footer">
                     <span>{article.readingTime}</span>
