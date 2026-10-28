@@ -61,7 +61,7 @@ const journey = [
     title: 'Building across several directions',
     label: 'Current chapter',
     description:
-      'I am continuing Software & AI Engineering, developing the UgSL AI Practice Coach, studying IoT and embedded systems, contributing to open source and growing APN.',
+      'I am continuing Software & AI Engineering, developing the UgSL AI Practice Coach, building with IoT and embedded systems, contributing to open source and growing APN while strengthening my full-stack engineering practice.',
     lesson:
       'The goal is not to collect technologies. It is to keep increasing what I am capable of building.',
   },

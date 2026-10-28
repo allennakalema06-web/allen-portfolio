@@ -111,7 +111,8 @@ function Home() {
               </p>
 
               <div className="technology-line">
-                Python <span>·</span> Django <span>·</span> PostgreSQL
+                Python <span>·</span> Django <span>·</span> PostgreSQL{' '}
+                <span>·</span> Neon <span>·</span> Vercel
               </div>
 
               <div className="inline-actions">
@@ -121,7 +122,7 @@ function Home() {
 
                 <a
                   className="text-link"
-                  href="https://nyondo-stock-system-vfb9.onrender.com/"
+                  href="https://nyondo-stock-system.vercel.app/"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -329,7 +330,10 @@ function Home() {
                 than the person who wrote them.
               </p>
 
-              <p>I worked mainly on the Django backend alongside Rose.</p>
+              <p>
+                I worked across the Django application, business logic and
+                role-based workflows alongside Rose.
+              </p>
 
               <Link className="text-link" to="/work/parkease">
                 Explore ParkEase →

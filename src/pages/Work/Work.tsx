@@ -9,11 +9,18 @@ const projects = [
     status: 'Deployed',
     role: 'Full-stack developer',
     description:
-      'A business management system built around the real workflows of a hardware company — including inventory, supplier records, customer deposits, sales, pricing rules and reporting.',
-    technologies: ['Python', 'Django', 'PostgreSQL', 'Render'],
+      'A role-based business management system built around the real workflows of a hardware company — connecting inventory, suppliers, supplier credit, customers, sales, receipts, transport rules, pricing and reporting.',
+    technologies: [
+      'Python',
+      'Django',
+      'PostgreSQL',
+      'Neon',
+      'JavaScript',
+      'Vercel',
+    ],
     image: '/images/nyondo/dashboard.png',
     caseStudy: '/work/nyondo-stock-system',
-    liveUrl: 'https://nyondo-stock-system-vfb9.onrender.com/',
+    liveUrl: 'https://nyondo-stock-system.vercel.app/',
   },
   {
     id: 'ugsl',
@@ -23,22 +30,38 @@ const projects = [
     status: 'In development',
     role: 'AI Practice Coach developer',
     description:
-      'An AI-powered practice component for a Ugandan Sign Language learning platform, designed to work alongside video lessons and support learner practice through an API-connected architecture.',
-    technologies: ['Python', 'AI Applications', 'APIs', 'Team Development'],
+      'An AI practice component for a Ugandan Sign Language learning platform. I am building the coach as a separate backend service, focusing on AI-assisted learner practice, API integration, temporary media handling, testing and reliable integration with the wider platform.',
+    technologies: [
+      'Python',
+      'AI Applications',
+      'APIs',
+      'Backend Engineering',
+      'Team Development',
+    ],
     image: '/images/ugsl/practice-coach.jpeg',
     caseStudy: '/work/ugsl-ai-practice-coach',
+    sourceUrl: 'https://github.com/allennakalema06-web/ugsl-ai-practice-coach',
   },
   {
     id: 'parkease',
     number: '03',
     title: 'ParkEase',
-    category: 'Backend Engineering · Team Project',
-    status: 'Team project',
-    role: 'Django backend developer',
+    category: 'Full-Stack Engineering · Team Project',
+    status: 'Completed',
+    role: 'Full-stack developer',
     description:
-      'A collaborative parking application where I worked mainly on the Django backend and application structure alongside another developer.',
-    technologies: ['Python', 'Django', 'Backend Development', 'Collaboration'],
+      'A role-based parking and vehicle-service management system for handling parking operations, checkout, receipts, tyre and battery services, pricing, dashboards and revenue reporting.',
+    technologies: [
+      'Python',
+      'Django',
+      'SQLite',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Team Development',
+    ],
     caseStudy: '/work/parkease',
+    sourceUrl: 'https://github.com/allennakalema06-web/parkease',
   },
 ]
 
@@ -111,6 +134,17 @@ function Work() {
                         rel="noreferrer"
                       >
                         Open live project ↗
+                      </a>
+                    )}
+
+                    {project.sourceUrl && (
+                      <a
+                        className="text-link"
+                        href={project.sourceUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        View source code ↗
                       </a>
                     )}
                   </div>

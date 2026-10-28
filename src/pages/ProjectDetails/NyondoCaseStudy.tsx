@@ -28,15 +28,15 @@ const capabilities = [
   },
   {
     number: '05',
-    title: 'Supplier tracking',
+    title: 'Supplier credit management',
     description:
-      'Stock received from suppliers and outstanding supplier payments can be tracked alongside inventory activity.',
+      'Stock received on credit, outstanding supplier balances and supplier payments are tracked alongside inventory activity.',
   },
   {
     number: '06',
     title: 'Operational reporting',
     description:
-      'Managers can see stock levels, inventory value, supplier credit, low-stock products and recent stock activity from the dashboard.',
+      'The system surfaces stock levels, low-stock products, supplier credit, sales activity and other operational information through role-aware dashboards and reports.',
   },
 ]
 
@@ -96,7 +96,7 @@ function NyondoCaseStudy() {
               </a>
               <a
                 className="button button--primary"
-                href="https://nyondo-stock-system-vfb9.onrender.com/"
+                href="https://nyondo-stock-system.vercel.app/"
                 target="_blank"
                 rel="noreferrer"
               >
@@ -108,8 +108,9 @@ function NyondoCaseStudy() {
               </Link>
             </div>
             <p className="demo-note">
-              The live system is hosted on a free service and may take a moment
-              to wake up. For the fastest overview, watch the demo below.
+              The live application includes dedicated Admin, Manager and
+              Attendant demo accounts. Credentials are available directly on the
+              login page.
             </p>
           </div>
 
@@ -162,12 +163,12 @@ function NyondoCaseStudy() {
 
           <div>
             <span>Stack</span>
-            <strong>Python · Django · PostgreSQL</strong>
+            <strong>Python · Django · PostgreSQL · JavaScript</strong>
           </div>
 
           <div>
             <span>Deployment</span>
-            <strong>Render</strong>
+            <strong>Vercel · Neon PostgreSQL</strong>
           </div>
 
           <div>
@@ -389,12 +390,25 @@ function NyondoCaseStudy() {
             </article>
 
             <article>
-              <h3>Moving from local development to PostgreSQL</h3>
+              <h3>Moving from local data to production PostgreSQL</h3>
 
               <p>
-                Deployment required adapting the project from the local
-                development environment to a hosted PostgreSQL database,
-                static-file handling and production configuration.
+                Production required moving beyond the local SQLite environment
+                to a hosted PostgreSQL database. I configured Neon PostgreSQL,
+                production environment variables, static-file handling and
+                deployment settings, then safely migrated the existing demo
+                dataset while preserving relationships and role-based behaviour.
+              </p>
+            </article>
+            <article>
+              <h3>Debugging production behaviour</h3>
+
+              <p>
+                Deployment exposed assumptions that were invisible locally,
+                including allowed hosts, static-file manifests, authentication,
+                database state and production user permissions. Solving those
+                issues reinforced that deployment is part of engineering, not
+                simply the final upload step.
               </p>
             </article>
 

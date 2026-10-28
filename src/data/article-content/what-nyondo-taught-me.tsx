@@ -145,9 +145,16 @@ export default function WhatNyondoTaughtMeContent() {
       </p>
 
       <p>
-        At one point, authentication appeared to behave incorrectly after
-        deployment because the production database did not contain the same
-        users and data as my local environment.
+        Moving the application into production exposed differences between my
+        local environment and the deployed system, including database state,
+        user permissions, static files and production configuration.
+      </p>
+
+      <p>
+        Later, when I moved the production database to Neon PostgreSQL, I also
+        had to think carefully about safely migrating the existing demo data,
+        preserving relationships and restoring role-based access without
+        overwriting the production administrator account.
       </p>
 
       <p>That experience changed how I think about deployment.</p>
